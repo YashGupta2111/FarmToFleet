@@ -8,7 +8,13 @@ const Product=require('./db/product.js');
 const Purchase=require('./db/product2.js')
 const Destination= require('./db/destination.js')
 app.use(express.json());
-app.use(cors());
+app.use(cors(
+    {
+        origin:["https://deploy-mern-1whq.vercel.app"],
+        methods:["post", "put","get","delete"],
+        credentials:true
+    }
+));
 require('dotend').config();
 app.get('/city/:name', async(req, res)=>{
     try {
