@@ -9,7 +9,7 @@ const Purchase=require('./db/product2.js')
 const Destination= require('./db/destination.js')
 app.use(express.json());
 app.use(cors());
-
+require('dotend').config();
 app.get('/city/:name', async(req, res)=>{
     try {
         const city = await Destination.findOne({ City: req.params.name });
@@ -125,4 +125,4 @@ app.get("/getproduct/:id",async(req,resp)=>{
     }
 })
 
-app.listen(7134);
+app.listen(process.env.PORT);
