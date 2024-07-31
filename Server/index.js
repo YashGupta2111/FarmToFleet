@@ -15,7 +15,7 @@ app.use(cors(
         credentials:true
     }
 ));
-require('dotend').config();
+require('dotenv').config();
 app.get('/city/:name', async(req, res)=>{
     try {
         const city = await Destination.findOne({ City: req.params.name });
