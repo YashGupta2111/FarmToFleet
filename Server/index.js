@@ -119,6 +119,7 @@ app.delete("/delete/:id",async(req,resp)=>{
     const result=await Product.deleteOne({_id:req.params.id});
     resp.send(result);
 })
+console.log("hello");
 app.get("/getproduct/:id",async(req,resp)=>{
     let pro=await Product.find({_id:req.params.id});
     if(pro.length>0)
