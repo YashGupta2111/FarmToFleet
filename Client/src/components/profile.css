@@ -1,0 +1,164 @@
+body {
+    font-family: "Lato", sans-serif;
+  }
+  .good{
+    display: flex;
+  }
+  .details{
+    width:100%;
+    margin:40px;
+    padding:40px;;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.144), /* Top shadow */
+    0 -10px 10px rgba(0, 0, 0, 0.144), /* Bottom shadow */
+    10px 0 10px rgba(0, 0, 0, 0.144), /* Right shadow */
+    -10px 0 10px rgba(0, 0, 0, 0.144); /* Left shadow */
+   
+
+  }
+  .details td{
+    padding:40px;
+  }
+  .details h4{
+    padding:20px; 
+    
+  }
+  .customer-details {
+    display: flex;
+  }
+  
+  .detail-category {
+    flex: 1;
+    padding: 10px;
+    margin-left:20px;
+   
+  }.detail-category {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .detail-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; /* Adjust as needed for vertical spacing */
+  }
+  
+  .label {
+    margin-right: 10px;
+    width:50%; /* Adjust the value to set the gap between label and value */
+  }
+  
+ 
+  .detail-category h4 {
+    margin-right: 10px; /* Adjust the value to increase or decrease the space */
+  }
+  
+  .dash-separator {
+    border-left: 1px dashed #000;
+    height: 100%;
+    margin: 0 10px;
+  }
+  
+  .displaydetails tr{
+    border:1px solid black;
+    padding:10px;
+  
+  }
+  .displaydetails {
+    margin:30px;
+  }
+  .sidenav {
+    height: 1200px;
+    width: 300px;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-attachment: fixed;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  .updateusername{
+  position: relative;
+  left:690px;
+  padding:10px;
+  width:100px;
+  background-color: white;
+  border-radius: 5px;
+  border:1px solid black;
+  }
+  .updateusername:hover{
+    color:white;
+    background-color:lightgreen;
+    border:1px solid lightgreen;
+  }
+  
+  .editbutton{
+    width:100px;
+    background-color: blue;
+    color:white;
+  }
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  .sidebarnav:hover{
+   
+    border:3px solid white;
+  }
+  .main {
+     /* Same as the width of the sidenav */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }/* Add these styles to your CSS file or style block */
+
+.profile-purchase {
+  background-color:white;
+  padding: 20px;
+  border-radius: 10px;
+   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.144), /* Top shadow */
+    0 -10px 10px rgba(0, 0, 0, 0.144), /* Bottom shadow */
+    10px 0 10px rgba(0, 0, 0, 0.144), /* Right shadow */
+    -10px 0 10px rgba(0, 0, 0, 0.144); /* Left shadow */
+}
+
+.goodprofilepurchase {
+  margin-top: 20px;
+}
+
+.purchasecustomer table {
+  width: 1200px;
+  padding:10px;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.purchasecustomer th, .purchasecustomer td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+
+.purchasecustomer th {
+  background-color: #f2f2f2;
+}
+
+.purchasecustomer h6 {
+  margin: 5px;;
+}
+
+

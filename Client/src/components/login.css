@@ -1,0 +1,158 @@
+.login-container
+{
+    background-image: url('./images/background-login.png');
+    background-attachment: fixed;
+   height:700px;
+  
+}
+.control
+{
+    
+    position: relative;
+    left:450px;
+}
+.slider-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.3s ease;
+  }
+  
+  .slide {
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  .letget
+  {
+    background-color: blue;
+    width:30%;
+    color:white;
+    border:1px solid blue;
+    position: relative;
+    top:110px;
+  }
+  .login-input-choose
+  {
+    padding:20px;
+  
+    border-bottom: 1px solid black;
+    width: 100%;
+  }
+  .sign-up-button
+  {
+     width: 100px;
+     background: rgba(0, 0, 0, 0.2);
+     color:white;
+     border:none !important;
+     text-decoration: none ;
+  }
+  .sign-up-button:hover
+  {
+    background: rgba(0, 0, 0, 0.2);
+    text-decoration: underline;
+
+  }
+.welcome-content{
+    position: relative;
+    top:110px;
+}
+.welcome-page
+{ 
+    padding:20px;
+    width:595px;
+    
+    height: 500px;;
+    border-radius: 5px;;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ 
+    
+}
+.login-page
+{ 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ 
+    padding:30px;
+    width:500px;
+    height: 500px;;
+    border-radius: 5px;;
+   border:1px solid white;
+}
+.login-input
+{
+    padding:20px;
+    
+    border-bottom: 1px solid black;
+}
+.login-page h4
+{
+    padding:20px;
+    font-size: 15px;;
+}
+
+.FORGOT
+{
+    
+    padding:40px;
+    margin:20px;
+    
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+
+}
+.password-error{
+  color:red;
+  position: relative;
+  left:0;
+}
+.Signuplogin
+{
+    text-decoration: none;
+}
+.sign-page
+{
+   
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ 
+    padding:30px;
+    width:500px;
+    height: 500px;;
+    border-radius: 5px;;
+   border:1px solid white;
+}
+.login-input-name
+{
+    display: inline-block;
+    padding:20px;
+    width:47.94%;
+    margin:4.5px;
+    border-bottom: 1px solid black; 
+   
+    
+}
+.login-button
+{
+    background-color: blue;
+    width:100%;
+    
+    color:white;
+    border:1px solid blue;
+}
+.sigin-button{
+    background-color: blue;
+    width:100%;
+    position: relative;
+    top:30px;
+    color:white;
+    border:1px solid blue;
+}

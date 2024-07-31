@@ -1,0 +1,60 @@
+.about-container {
+    display:flex;
+    margin:30px;
+    text-align: left;
+    justify-content: left;
+    align-items: left;
+
+}
+.card-img-top{
+    height:350px;
+    border-radius:5px;
+}
+.imagee{
+    width: 600px;
+   
+    height:450px;
+}
+.TEAM{
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding:50px;
+    margin:50px;
+    width:70%;
+    position: relative;
+    left:150px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.144), /* Top shadow */
+    0 -10px 10px rgba(0, 0, 0, 0.144), /* Bottom shadow */
+    10px 0 10px rgba(0, 0, 0, 0.144), /* Right shadow */
+    -10px 0 10px rgba(0, 0, 0, 0.144); /* Left shadow */
+
+
+}
+
+
+.CARD{
+    border-radius: 5px;
+    padding:30px;
+   
+
+}
+.Teamdetails{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.card-body{
+    padding:30px;
+    margin:-20px;
+    /* background-color: lightgray; */
+}
+.about-us{
+    margin:20px;
+    padding:40px;
+    width:700px;
+   
+    height:500px;
+}
