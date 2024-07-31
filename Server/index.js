@@ -65,11 +65,11 @@ app.post("/add-product",async(req,resp)=>{
     let result=await product.save();
     resp.send(result);
 })
-app.post("/contact",async(req,resp)=>{
-    let product= new contact(req.body);
-    let result=await product.save();
-    resp.send(result);
-})
+// app.post("/contact",async(req,resp)=>{
+//     let product= new contact(req.body);
+//     let result=await product.save();
+//     resp.send(result);
+// })
 app.post("/purchases",async(req,resp)=>{
     let product=new Purchase(req.body);
     let result=await product.save();
