@@ -10,7 +10,7 @@ const Destination= require('./db/destination.js')
 app.use(express.json());
 app.use(cors(
     {
-        origin:["https://deploy-mern-1whq.vercel.app"],
+        origin:["https://farm-to-fleet-frontend.vercel.app/"],
         methods:["post", "put","get","delete"],
         credentials:true
     }
