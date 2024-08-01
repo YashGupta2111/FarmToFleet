@@ -91,7 +91,7 @@ export default function Productlist(props) {
     }
     const getproduct=async()=>
     {
-   let result= await fetch('http://localhost:7134/getproduct');
+   let result= await fetch('https://farm-backend-1.onrender.com/getproduct');
    result=await result.json();
    setproducts(result);
     }
@@ -109,14 +109,14 @@ export default function Productlist(props) {
     
     }
     const deletedata=async(item)=>{
-        let result=fetch(`http://localhost:7134/delete/${item}`,{
+        let result=fetch(`https://farm-backend-1.onrender.com/delete/${item}`,{
             method: 'DELETE',
         })
         window.location.reload();
     }
    const updatedatacarefully=async(item)=>{
   
-         let result=await fetch(`http://localhost:7134/update/${currentproduct._id}`,{
+         let result=await fetch(`https://farm-backend-1.onrender.com/update/${currentproduct._id}`,{
             method:'PUT',
             body:JSON.stringify({name,quantity,price,category,description,currentDate,currentTime}),
             headers:{ 

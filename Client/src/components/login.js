@@ -25,7 +25,7 @@ export default function Login() {
   const Createaccount=async()=>{
     if(email.length>0)
     {
-      let result=await fetch("http://localhost:7134/signup",{
+      let result=await fetch("https://farm-backend-1.onrender.com/signup",{
         method:'post',
         body:JSON.stringify({FullName,email,password,Title}),
         headers:{ 
@@ -51,7 +51,7 @@ export default function Login() {
      } }
   
   const logincompleted=async()=>{
-    let result=await fetch("http://localhost:7134/login",{
+    let result=await fetch("https://farm-backend-1.onrender.com/login",{
         method:'post',
         body:JSON.stringify({email,password}),
         headers:{ 
