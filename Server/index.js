@@ -9,11 +9,11 @@ const Purchase=require('./db/product2.js')
 const Destination= require('./db/destination.js')
 app.use(express.json());
 app.use(cors(
-    {
-        origin:["https://farm-to-fleet-frontend.vercel.app"],
-        methods:["post", "put","get","delete"],
-        credentials:true
-    }
+//     {
+//         origin:["https://farm-to-fleet-frontend.vercel.app"],
+//         methods:["post", "put","get","delete"],
+//         credentials:true
+//     }
 ));
 require('dotenv').config();
 app.get('/city/:name', async(req, res)=>{
@@ -132,4 +132,4 @@ app.get("/getproduct/:id",async(req,resp)=>{
     }
 })
 
-app.listen(7134);
+app.listen(process.env.PORT);
