@@ -13,7 +13,7 @@ export default function    Purchases() {
 
   const getproduct=async()=>
 {
-let result= await fetch('https://farm-backend-1.onrender.com/getpurchases');
+let result= await fetch('https://farm-backend-khtx.onrender.com/getpurchases');
 result=await result.json();
 setpurchase(result);
 }

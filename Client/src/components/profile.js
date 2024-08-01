@@ -34,7 +34,7 @@ export default function Profile() {
 
  const getpurchase=async()=>
 {
-let result= await fetch('https://farm-backend-1.onrender.com/getpurchases');
+let result= await fetch('https://farm-backend-khtx.onrender.com/getpurchases');
 result=await result.json();
 setpurchase(result);
 }
@@ -139,7 +139,7 @@ const Updatedetails=async(item)=>{
 }
 const updatedatacarefully=async(item)=>{
   
-  let result=await fetch(`https://farm-backend-1.onrender.com/updatedetails/${currentCustomer._id}`,{
+  let result=await fetch(`https://farm-backend-khtx.onrender.com/updatedetails/${currentCustomer._id}`,{
    method:'PUT',
    body:JSON.stringify({FullName,gender,city,state,email,Title,number}),
    headers:{ 
@@ -160,7 +160,7 @@ const updatedatacarefully=async(item)=>{
 },[])
 const getproduct=async()=>
 {
-let result= await fetch(`https://farm-backend-1.onrender.com/getcustomerdetails/${detail.email}`);
+let result= await fetch(`https://farm-backend-khtx.onrender.com/getcustomerdetails/${detail.email}`);
 result=await result.json();
 setcurrentcustomer(result);
 

@@ -24,7 +24,7 @@ const ProductForm = () => {
     }, []);
   const getdata=async()=>
   {
-  let result=await fetch("https://farm-backend-1.onrender.com/add-product",{
+  let result=await fetch("https://farm-backend-khtx.onrender.com/add-product",{
     method:'post',
     body:JSON.stringify({name,quantity,price,category,description,currentDate,currentTime}),
     headers:{ 

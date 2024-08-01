@@ -62,7 +62,7 @@ errorfornotentery(false);
     }
     const getproduct=async()=>
     {
-   let result= await fetch('https://farm-backend-1.onrender.com/getproduct');
+   let result= await fetch('https://farm-backend-khtx.onrender.com/getproduct');
    result=await result.json();
    setproducts(result);
     }
@@ -101,7 +101,7 @@ errorfornotentery(false);
 }, );
 console.log(distance);
     const updatedatacarefully=async(quantity)=>{
-      let result=await fetch(`https://farm-backend-1.onrender.com/update/${currentproduct._id}`,{
+      let result=await fetch(`https://farm-backend-khtx.onrender.com/update/${currentproduct._id}`,{
          method:'PUT',
          body:JSON.stringify({quantity}),
          headers:{ 
@@ -133,7 +133,7 @@ console.log(distance);
   };
   
     const deletedata=async(item)=>{
-        let result=fetch(`https://farm-backend-1.onrender.com/delete/${item}`,{
+        let result=fetch(`https://farm-backend-khtx.onrender.com/delete/${item}`,{
             method: 'DELETE',
         })
         window.location.reload();
@@ -151,7 +151,7 @@ console.log(distance);
       
       try {
         console.log(destination);
-          const response = await fetch(`https://farm-backend-1.onrender.com/city/${destination}`);
+          const response = await fetch(`https://farm-backend-khtx.onrender.com/city/${destination}`);
           if (!response.ok) {
               throw new Error('City not found');
           }
@@ -192,7 +192,7 @@ console.log(distance);
    {  
     
     
-   let result=await fetch("https://farm-backend-1.onrender.com/purchases",{
+   let result=await fetch("https://farm-backend-khtx.onrender.com/purchases",{
      method:'post',
      body:JSON.stringify({customername,destination,name,quant,price,city,transportationcost,category,description,currentDate,currentTime,totalcost}),
      headers:{ 
