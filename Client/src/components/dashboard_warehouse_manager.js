@@ -89,6 +89,7 @@ export default function Productlist(props) {
      if(description==='')  {setdescription(currentproduct.description);}
      setupdatebutton2(true);
     }
+    console.log("Hello your app is working");
     const getproduct=async()=>
     {
    let result= await fetch('https://farm-backend-1.onrender.com/getproduct');
